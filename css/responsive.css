@@ -1,0 +1,46 @@
+/* responsive for small screens*/
+@media (max-width: 768px) {
+  .tenoris-services {
+    grid-template-columns: 1fr;
+  }
+  .static-content-area {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .map-area-container {
+    grid-template-columns: 1fr;
+  }
+  .tips-container {
+    width: 100%;
+  }
+  .staff-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(300px, auto);
+  }
+  .container .toggle-menu {
+    display: block;
+  }
+  .container .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .tenoris-services {
+    grid-template-columns: 1fr;
+  }
+  .static-content-area {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .map-area-container {
+    grid-template-columns: 1fr;
+  }
+  .staff-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .staff-img-container {
+    margin-top: 100px;
+  }
+}
