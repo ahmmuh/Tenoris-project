@@ -11,11 +11,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <!-- <link rel="stylesheet" href="../css/utilities.css" /> -->
-    <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/utility.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
+    <header>
     <!-- navbar -->
     <div class="navbar" id="navbar">
       <!-- <div class="container">
@@ -36,7 +37,6 @@
     <!-- navbar ends-->
 
     <!-- header -->
-    <header>
       <div class="header-content">
         <h1>TENORIS ONE – En fond som erbjuder riskspridning på riktigt</h1>
         <p>
@@ -44,13 +44,13 @@
           plats för dina pengar lorem ipsum dolor sit amet, consetetur
           sadipscing elitr … etc.
         </p>
-        <button id="header-btn">Läs mer om vår fond</button>
+        <button class="header-btn btn">Läs mer om vår fond</button>
       </div>
     </header>
     <!-- header ends-->
 
     <!-- Tenoris service -->
-    <main class="tenoris-services">
+    <main class="tenoris-services grid-3">
       <div class="tenoris-first-service">
         <img src="../images/diversifierad-startsida.svg" alt="DIVERSIFIERAD" />
         <h3>Diversifierad</h3>
@@ -105,7 +105,7 @@
     </section>
     <!-- Tenoris map area -->
     <div class="map-area">
-      <div class="map-area-container">
+      <div class="map-area-container grid-2">
         <div class="map-content">
           <h1>Diversifiering på riktigt</h1>
           <p>
@@ -123,7 +123,7 @@
 
     <!-- staff area -->
     <section class="staff-area">
-      <div class="staff-container">
+      <div class="staff-container grid-2">
         <div class="staff-content">
           <h2>Sed ut perspiciatis unde omnis iste natus</h2>
           <ul>
@@ -131,7 +131,7 @@
             <li>Sed diam nonumy eirmod tempor</li>
             <li>At vero eos et accusam et justo</li>
           </ul>
-          <a href="#" href-btn>Läs mer</a>
+          <a href="#" class="btn">Läs mer</a>
         </div>
 
         <div class="staff-img-container">
@@ -151,9 +151,9 @@
             erat, sed diam voluptua.
           </p>
         </div>
-        <div class="product-btns">
-          <button type="button">Köp hos Nordnet</button>
-          <button type="button">Köp hos Avanza</button>
+        <div class="product-btns grid-2">
+          <button type="button" class="btn">Köp hos Nordnet</button>
+          <button type="button" class="btn">Köp hos Avanza</button>
         </div>
       </div>
     </div>

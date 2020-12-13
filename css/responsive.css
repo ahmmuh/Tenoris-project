@@ -1,5 +1,13 @@
 /* responsive for small screens*/
 @media (max-width: 768px) {
+  header .header-content {
+    width: 80%;
+    padding: 1rem;
+  }
+  .container {
+    width: 100%;
+  }
+
   .tenoris-services {
     grid-template-columns: 1fr;
   }
@@ -26,8 +34,13 @@
 }
 
 @media (max-width: 500px) {
-  .tenoris-services {
+  header .header-content {
+    width: 80%;
+    padding: 1rem;
+  }
+  .grid-1 {
     grid-template-columns: 1fr;
+    background-color: red;
   }
   .static-content-area {
     grid-template-columns: 1fr;

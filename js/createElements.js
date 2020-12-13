@@ -37,7 +37,7 @@
     const factElements = `
     <div class="fact-container">
         <h1>Fondfakta</h1>
-        <div class="fact-list">
+        <div class="fact-list grid-2">
           <ul class="right-list">
             <li>Fondnamn</li>
             <li>ISIN-kod</li>

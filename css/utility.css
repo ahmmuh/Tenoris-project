@@ -1,4 +1,4 @@
-/* .grid-1 {
+.grid-1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
@@ -7,14 +7,13 @@
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
 }
 
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.625rem;
-  margin: 2.5rem;
+  /* margin: 2.5rem; */
 }
 
 .grid-4 {
@@ -34,10 +33,11 @@
   height: 45px;
   margin: 20px auto;
   font-size: 15px;
+  text-decoration: none;
   cursor: pointer;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-} */
+}
