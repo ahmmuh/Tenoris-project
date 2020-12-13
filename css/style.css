@@ -17,7 +17,7 @@ body {
 }
 header .navbar {
   color: var(--whiteColor);
-  background-color: #222;
+  background-color: #22c;
   position: fixed;
   left: 0;
   right: 0;
