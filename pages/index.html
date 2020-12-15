@@ -11,32 +11,32 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/utility.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
   </head>
   <body>
     <header>
-    <!-- navbar -->
-    <div class="navbar" id="navbar">
-      <!-- <div class="container">
-        <h2>Tenoris One</h2>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Hem</a></li>
-            <li><a href="#">Fonden</a></li>
-            <li><a href="#">Om oss</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="toggle-menu">
-          <i class="fas fa-bars 3x"></i>
-        </button>
-      </div> -->
-    </div>
-    <!-- navbar ends-->
+      <!-- navbar -->
+      <div class="navbar home-nav" id="navbar">
+        <div class="container">
+          <h2 class="logo">Tenoris One</h2>
+          <nav class="menu" id="menu">
+            <ul class="menu-list">
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="fonden.html">Fonden</a></li>
+              <li><a href="company.html">För företag</a></li>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="toggle-icon">
+            <i class="fas fa-bars 3x"></i>
+          </button>
+        </div>
+      </div>
+      <!-- navbar ends-->
 
-    <!-- header -->
+      <!-- header -->
       <div class="header-content">
         <h1>TENORIS ONE – En fond som erbjuder riskspridning på riktigt</h1>
         <p>
@@ -50,7 +50,7 @@
     <!-- header ends-->
 
     <!-- Tenoris service -->
-    <main class="tenoris-services grid-3">
+    <main class="tenoris-services grid-3 grid-2">
       <div class="tenoris-first-service">
         <img src="../images/diversifierad-startsida.svg" alt="DIVERSIFIERAD" />
         <h3>Diversifierad</h3>
@@ -81,7 +81,7 @@
 
     <!-- Tenoris statics area -->
     <section class="statics-area">
-      <div class="static-content-area">
+      <div class="static-content-area grid-1">
         <div class="billing-area">
           <div class="static">
             <h3>+2,3%</h3>
@@ -103,6 +103,7 @@
         </div>
       </div>
     </section>
+
     <!-- Tenoris map area -->
     <div class="map-area">
       <div class="map-area-container grid-2">
@@ -135,7 +136,7 @@
         </div>
 
         <div class="staff-img-container">
-          <img src="../images/staff.jpeg" alt="staff" />
+          <img src="../images/glass.jpg" alt="staff" />
         </div>
       </div>
     </section>
@@ -170,7 +171,8 @@
     <!-- footer ends-->
 
     <!-- js files -->
-    <script src="../js/createElements.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/fact.js"></script>
   </body>
 </html>

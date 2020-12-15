@@ -1,7 +1,8 @@
-const menu = document.querySelector(".toggle-menu");
+"use strict";
+// Change menu BGC on scroll
 
-menu.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-  console.log("toggle menu");
-}
+window.onscroll = () => {
+  const nav = document.querySelector("#navbar");
+  if (this.scrollY <= 12) nav.className = "";
+  else nav.className = "nav-onscroll";
+};

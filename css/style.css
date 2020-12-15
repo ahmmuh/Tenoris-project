@@ -12,35 +12,38 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.navbar {
-  height: 70px;
-}
-header .navbar {
+
+header #navbar {
   color: var(--whiteColor);
-  background-color: #22c;
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 1
+  z-index: 1;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 1.25rem;
-  width: 80%;
+  padding: 2rem;
+  width: 90%;
   margin: 0 auto;
-  /* align-items: center; */
+  align-items: center;
+  align-content: center;
 }
-
-.container .toggle-menu {
-  height: 45px;
+.container .logo {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  color: white;
+}
+.container .toggle-icon {
+  height: 4rem;
   background-color: transparent;
   cursor: pointer;
   border: 0;
   outline: 0;
   display: none;
 }
-.container .toggle-menu i {
+.container .toggle-icon i {
   font-size: 3rem;
   color: var(--whiteColor);
   line-height: 0.5;
@@ -48,14 +51,15 @@ header .navbar {
 .container .menu ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.25rem;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-gap: 1.25rem; */
+  /* align-items: center; */
 }
 
 .menu li a {
   color: var(--whiteColor);
   text-decoration: none;
-  font-size: 1.2em;
+  /* font-size: 1em; */
   text-transform: uppercase;
 }
 
@@ -90,26 +94,11 @@ header .btn {
   padding: 0 1rem;
   width: 11rem;
   text-transform: uppercase;
-  /* border: 0.0625rem solid var(--whiteColor);
-  padding: 0.6rem;
-  height: 45px;
-  font-size: 0.9375rem; */
-  /* padding: 0.6rem;
-  display: block;
-  text-align: center;
-  margin: 1.25rem auto;
-  cursor: pointer;
-  border-radius: 0.625rem;
-  -webkit-border-radius: 0.625rem;
-  -moz-border-radius: 0.625rem;
-  -ms-border-radius: 0.625rem;
-  -o-border-radius: 0.625rem; */
 }
 header button:hover {
   background-color: transparent;
   color: #bfaa63;
 }
-/* header style ends */
 
 /* Tenoris service area */
 
@@ -263,9 +252,6 @@ header button:hover {
 }
 
 .fact-list {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.25rem; */
   padding: 1.063rem;
 }
 .fact-list ul {
@@ -297,3 +283,118 @@ footer {
   text-decoration: underline;
 }
 /* footer area ends*/
+
+/* Change bgc on scrollY */
+.nav-onscroll,
+.navbar-bgc {
+  background-color: #39687f;
+  height: 13vh;
+}
+
+/* fonden page */
+.fonden-title {
+  background-color: rgb(243, 239, 233);
+  padding-left: 7rem;
+}
+.fonden-title h2 {
+  padding: 0.7rem;
+}
+.stabil {
+  background-color: #f2f3f4;
+}
+.divers-container,
+.stabil-container,
+.langsiktig .container,
+.risk .container {
+  width: 80%;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.divers-container div img,
+.stabil-container div img,
+.langsiktig .container div img,
+.risk .container div img {
+  padding: 2rem;
+}
+.stabil-container div p {
+  padding-right: 3rem;
+}
+.risk,
+.invest2,
+.FAQs {
+  background-color: #f2f3f4;
+}
+
+.document-container {
+  width: 60%;
+  margin: 3rem auto;
+  color: #39687f;
+}
+.document-container div {
+  margin: 1rem 0;
+}
+.document-container div #big-doc {
+  margin-top: -0.5rem;
+}
+.document-container ul {
+  list-style-type: none;
+}
+.document-container ul li {
+  cursor: pointer;
+}
+
+/* för företag page (meny) */
+.invest-container,
+.invest-container2,
+.how-to,
+.container-FAQs,
+.meeting div {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1.6rem;
+}
+.invest-container div,
+.invest-container div p {
+  margin: 0.3rem;
+}
+.invest-container2 ul {
+  padding: 5rem;
+}
+.how-to blockquote {
+  border-left: 3px solid #bfaa63;
+  padding: 3rem;
+  height: auto;
+  height: 200px;
+}
+.FAQs .container-FAQs {
+  /* padding: 2rem 0; */
+  display: flex;
+  justify-content: space-around;
+}
+.container-FAQs div img {
+  margin: 2rem 0;
+}
+.container-FAQs ul {
+  list-style-type: none;
+}
+.container-FAQs ul li {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-bottom: 1px solid;
+  color: #39687f;
+  cursor: pointer;
+}
+
+.meeting div {
+  text-align: center;
+}
+.meeting div button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid rgb(252, 212, 139);
+  color: #222;
+  width: 160px;
+  height: 37px;
+  text-transform: uppercase;
+}

@@ -1,5 +1,9 @@
 /* responsive for small screens*/
 @media (max-width: 768px) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   header .header-content {
     width: 80%;
     padding: 1rem;
@@ -8,12 +12,9 @@
     width: 100%;
   }
 
-  .tenoris-services {
+  .grid-1 {
     grid-template-columns: 1fr;
-  }
-  .static-content-area {
-    grid-template-columns: 1fr;
-    width: 100%;
+    /* width: 100%; */
   }
   .map-area-container {
     grid-template-columns: 1fr;
@@ -22,10 +23,10 @@
     width: 100%;
   }
   .staff-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: minmax(300px, auto);
   }
-  .container .toggle-menu {
+  .container .toggle-icon {
     display: block;
   }
   .container .menu {
@@ -40,7 +41,7 @@
   }
   .grid-1 {
     grid-template-columns: 1fr;
-    background-color: red;
+    /* background-color: red; */
   }
   .static-content-area {
     grid-template-columns: 1fr;
@@ -52,8 +53,5 @@
   .staff-container {
     grid-template-columns: 1fr;
     width: 100%;
-  }
-  .staff-img-container {
-    margin-top: 100px;
   }
 }
