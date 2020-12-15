@@ -13,7 +13,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header #navbar {
+header #navbar,
+.navbar {
   color: var(--whiteColor);
   position: fixed;
   left: 0;
@@ -24,7 +25,7 @@ header #navbar {
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1.7rem;
   width: 90%;
   margin: 0 auto;
   align-items: center;
@@ -32,8 +33,9 @@ header #navbar {
 }
 .container .logo {
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: white;
+  cursor: pointer;
 }
 .container .toggle-icon {
   height: 4rem;
@@ -51,18 +53,19 @@ header #navbar {
 .container .menu ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  /* grid-gap: 1.25rem; */
-  /* align-items: center; */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .menu li a {
   color: var(--whiteColor);
   text-decoration: none;
-  /* font-size: 1em; */
   text-transform: uppercase;
 }
-
+.menu ul li a:hover {
+  color: rgb(243, 194, 134);
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.8rem;
+}
 /* header style */
 header {
   background-image: url(../images/headerbg.jpg);
@@ -256,6 +259,7 @@ header button:hover {
 }
 .fact-list ul {
   list-style-type: none;
+  margin: 0 2rem;
 }
 .fact-list ul li {
   border-bottom: 0.0625rem solid #d4cfbc;
@@ -294,7 +298,8 @@ footer {
 /* fonden page */
 .fonden-title {
   background-color: rgb(243, 239, 233);
-  padding-left: 7rem;
+  padding-left: 5.7rem;
+  padding-top: 6rem;
 }
 .fonden-title h2 {
   padding: 0.7rem;
@@ -307,8 +312,8 @@ footer {
 .langsiktig .container,
 .risk .container {
   width: 80%;
-  margin: 4rem auto;
-  padding: 2rem;
+  margin: 3rem auto;
+  /* padding: 2rem; */
 }
 
 .divers-container div img,
@@ -351,7 +356,7 @@ footer {
 .container-FAQs,
 .meeting div {
   width: 80%;
-  margin: 2rem auto;
+  margin: 4rem auto;
   padding: 1.6rem;
 }
 .invest-container div,
